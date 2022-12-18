@@ -28,7 +28,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Ensure Connectivity between the client and Domain Controller
 - Install Active Directory
 - Create an Admin and Normal User Account in AD
-- Join Client-1 to your domain (activedirectoryproject.com)
+- Join Client-1 to your domain (myadproject.com)
 - Setup Remote Desktop for non-administrative users on Client-1
 - Create a manu additional users and attempt to log into client-1 with one of the users
 
@@ -70,36 +70,36 @@ This tutorial outlines the implementation of on-premises Active Directory within
   Login to DC-1 and install Active Directory Domain Services:
 </p>
 <p>
-  Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is):
+  Promote as a Domain Controller:
+</p>
+<p>
+  Setup a new forest as myactivedirectory.com (can be anything, just remember what it is):
 </p>  
 <p>
-  Restart and then log back into DC-1 as user: mydomain.com\labuser:
+  Restart and then log back into DC-1 as user: myadproject.com\labuser:
 </p>
 <br />
 <br />
 <h3 align="center">Create an Admin and Normal User Account in AD</h3>
 <br />
 <p>
-  In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”:
+  In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES” and another one called "_ADMINS":
 </p>
 <p>
-  Create a new OU named “_ADMINS”:
-</p>
-<p>
-  Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”:
+  Create a new employee named “Jane Doe” with the username of “jane_admin”:
 </p>
 <p>
   Add jane_admin to the “Domain Admins” Security Group:
 </p>
 <p>  
-  Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”:
+  Log out/close the Remote Desktop connection to DC-1 and log back in as “myadproject.com\jane_admin”:
 </p>
 <p>
   User jane_admin as your admin account from now on:
 </p>
 <br />
 <br />
-<h3 align="center">Join Client-1 to your domain (mydomain.com)</h3>
+<h3 align="center">Join Client-1 to your domain (myadproject.com)</h3>
 <br />
 <p>
   From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address:
