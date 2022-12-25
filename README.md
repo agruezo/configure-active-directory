@@ -101,7 +101,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   <img src="https://i.imgur.com/zi15fw4.png" height="75%" width="100%" alt="domain controller promotion"/>
 </p>
 <p>
-  Setup a new forest as myactivedirectory.com (can be anything, just remember what it is):
+  Setup a new forest as myactivedirectory.com (can be anything, just remember what it is - I ultimately did set it up as myadproject.com which you'll see in the next pic):
 </p>
 <p>
   <img src="https://i.imgur.com/DCFUVrM.png" height="75%" width="100%" alt="set new forest"/>
